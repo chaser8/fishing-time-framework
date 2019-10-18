@@ -1,0 +1,18 @@
+spring:
+  cloud:
+    nacos:
+      config:
+        namespace: 5d076bf4-2ffb-46d7-b028-095fff73c891
+        file-extension: yaml
+        server-addr: yangzb.cn:8848
+        ext-config[0]:
+          data-id: database.yaml
+          group: example
+          refresh: true
+  application:
+    name: cloudExample
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

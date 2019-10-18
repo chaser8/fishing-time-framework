@@ -1,0 +1,59 @@
+server:
+  port: 9101
+spring:
+  profiles:
+    active: dev
+  application:
+    name: spring-cloud-starter-uaa-client-example
+  cloud:
+    nacos:
+      discovery:
+        server-addr: yangzb.cn:8848
+        namespace: "5d076bf4-2ffb-46d7-b028-095fff73c891"
+      config:
+        namespace: 5d076bf4-2ffb-46d7-b028-095fff73c891
+        file-extension: yaml
+        server-addr: ${spring.cloud.nacos.discovery.server-addr}
+        ext-config:
+          - data-id: database-${spring.profiles.active}.yaml
+            group: database
+            refresh: true
+          - data-id: common-${spring.profiles.active}.yaml
+            group: common
+            refresh: true
+          - data-id: redis-${spring.profiles.active}.yaml
+            group: redis
+            refresh: true
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+logging:
+  level:
+    root: info
+    java:
+      net:
+        HttpURLConnection: info
+    sun: info
+    org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping: trace
+    com:
+      alibaba:
+        nacos:
+          client:
+            naming: error
+      tydic.dev1: debug
+security:
+  oauth2:
+    white-list:
+    - test1222
+    - test2
+#    client:
+#      clientId: dev
+#      clientSecret: dev
+#      access-token-uri: http://localhost:9100/oauth/token
+#      user-authorization-uri: http://localhost:9100/oauth/authorize
+    resource:
+      user-info-uri: http://localhost:9100/uaa/user
+      prefer-token-info: false
+      white-list:
+#      jwt:
+#        key-uri: http://paascloud-provider-uac:8000/oauth/token_key

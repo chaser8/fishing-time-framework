@@ -1,0 +1,94 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+server:
+  port: 9090
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: spring-cloud-gateway-example
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true  #表明gateway开启服务注册和发现的功能，并且spring cloud gateway自动根据服务发现为每一个服务创建了一个router，这个router将以服务名开头的请求路径转发到对应的服务。
+          lowerCaseServiceId: true   #是将请求路径上的服务名配置为小写（因为服务注册的时候，向注册中心注册时将服务名转成大写的了），比如以/service-hi/*的请求路径被路由转发到服务名为service-hi的服务上。
+          filters:
+          - StripPrefix=1
+    nacos:
+      discovery:
+        server-addr: ${spring.cloud.nacos.config.server-addr}
+        namespace: ${spring.cloud.nacos.config.namespace}
+logging:
+  level:
+    root: info
+    com.alibaba.nacos.client.naming: error
+    com.ctg.itrdc.cache.pool.CtgJedisPool: error
+    com.ctg.itrdc.cache.monitor.MonitorWorker: error
+
+#server:
+#  port: 9091
+#spring:
+#  profiles:
+#    active: dev
+#  application:
+#    name: spring-cloud-gateway-example
+#  cloud:
+#    gateway:
+#      enabled: true
+#      routes:
+#      - id: spring-cloud-starter-uaa-server-example
+#        uri: lb://spring-cloud-starter-uaa-server-example
+#        predicates:
+#        - Path=/uaa/**
+#        filters:
+#        - StripPrefix=1
+##        - filter1
+#      discovery:
+#        locator:
+#          enabled: true
+#    nacos:
+#      discovery:
+#        server-addr: yangzb.cn:8848
+#        namespace: "5d076bf4-2ffb-46d7-b028-095fff73c891"
+#      config:
+#        namespace: "5d076bf4-2ffb-46d7-b028-095fff73c891"
+#        file-extension: yaml
+#        server-addr: yangzb.cn:8848
+#        ext-config:
+#        - data-id: database-${spring.profiles.active}.yaml
+#          group: database
+#          refresh: true
+#        - data-id: common-${spring.profiles.active}.yaml
+#          group: common
+#          refresh: true
+#        - data-id: redis-${spring.profiles.active}.yaml
+#          group: redis
+#          refresh: true
+#mybatis-plus:
+#  configuration:
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+#logging:
+#  level:
+#    root: info
+#    java:
+#      net:
+#        HttpURLConnection: info
+#    sun: info
+#    org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping: trace
+#    org.apache.tomcat.util.net.NioEndpoint: error
+#    io.lettuce.core.protocol.CommandEncoder: debug
+#    com:
+#      alibaba:
+#        nacos:
+#          client:
+#            naming: error
+#      tydic.dev1: debug
+#security:
+#  oauth2:
+#    white-list:
+#    - test1
+#    - test2

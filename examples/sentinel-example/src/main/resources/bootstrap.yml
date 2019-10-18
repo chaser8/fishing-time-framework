@@ -1,0 +1,39 @@
+#cloud环境配置
+server:
+  port: ${port:9091}
+  tomcat:
+    uri-encoding: UTF-8
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    sentinel:
+      enabled: true
+logging:
+  file: ./nacosConfigExample.log
+  level:
+    root: info
+spring:
+  cloud:
+    nacos:
+      config:
+        namespace: 5d076bf4-2ffb-46d7-b028-095fff73c891
+        file-extension: yaml
+        server-addr: yangzb.cn:8848
+    sentinel:
+      datasource:
+        ds1:
+          nacos:
+            server-addr: yangzb.cn:8848
+#            namespace: 5d076bf4-2ffb-46d7-b028-095fff73c891
+            data-id: sentinel.json
+            group-id: example
+      transport:
+        dashboard: localhost:9999
+        port: 7080
+#      eager: true
+      enabled: true
+  application:
+    name: sentinelExample

@@ -1,0 +1,52 @@
+nacos-addr: 192.168.10.52:8848
+nacos-namespace: 5d076bf4-2ffb-46d7-b028-095fff73c891
+#cloud环境配置
+server:
+  port: ${port:9091}
+  tomcat:
+    uri-encoding: UTF-8
+#  servlet:
+#    context-path: /base-api-example
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+logging:
+  file: ./nacosConfigExample.log
+  level:
+    root: info
+    org:
+      jasig:
+        cas: debug
+spring:
+  profiles:
+    active: dev
+  cloud:
+    nacos:
+      discovery:
+        server-addr: ${nacos-addr}
+        namespace: ${nacos-namespace}
+      config:
+        server-addr: ${nacos-addr}
+        ext-config:
+          - data-id: database-${spring.profiles.active}.yaml
+            group: database
+            refresh: true
+          - data-id: common-${spring.profiles.active}.yaml
+            group: common
+            refresh: true
+        namespace: ${nacos-namespace}
+        access-key:
+  mvc:
+    static-path-pattern: /**
+  jackson:
+    date-format: "yyyy-MM-dd HH:mm:ss"
+    time-zone: "GMT+8"
+  application:
+    name: base-api-example
+swagger2:
+  enable: true
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

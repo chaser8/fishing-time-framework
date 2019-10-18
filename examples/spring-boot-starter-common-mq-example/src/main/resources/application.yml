@@ -1,0 +1,51 @@
+#cloud环境配置
+server:
+  port: ${port:9091}
+  tomcat:
+    uri-encoding: UTF-8
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+logging:
+  file: ./nacosConfigExample.log
+  level:
+    root: info
+spring:
+  data:
+    mq:
+      consumer:
+        type: ctg
+        consumerGroupId: c_yzb_test_2x
+        bootstrapServers: 192.168.10.151:9976
+        username: dev1
+        clustername: tydic-bigdata-dev1
+        tenantID: 2
+        enableBdb: true
+        password: 1qaz2wsx
+  datasource:
+    url: jdbc:mysql://192.168.10.152:8866/cpcp_center_dev
+    username: cpcp_center_dev
+    password: "1-HPjg#6"
+    driver-class-name: com.mysql.jdbc.Driver
+    druid:
+      web-stat-filter:
+        enabled: true
+        url-pattern: "/*"
+        exclusions: "*.js,*.gif,*.jpg,*.bmp,*.png,*.css,*.ico,/druid/*"
+      stat-view-servlet:
+        enabled: true
+        url-pattern: "/druid/*"
+        reset-enable: false
+        login-username: admin
+        login-password: 123456
+      enable: true
+  jackson:
+    date-format: "yyyy-MM-dd HH:mm:ss"
+    time-zone: "GMT+8"
+swagger2:
+  enable: true
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

@@ -1,0 +1,13 @@
+server:
+  port: ${port:9091}
+  tomcat:
+    uri-encoding: UTF-8
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+logging:
+  file: ./nacosConfigExample.log
+  level:
+    root: debug

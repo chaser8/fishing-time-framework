@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>spring-boot-starter-springfox-swagger-2.7.0</artifactId>
+    <name>spring-boot-starter-springfox-swagger-2.7.0</name>
+    <packaging>jar</packaging>
+
+    <properties>
+        <swagger2.version>2.7.0</swagger2.version>
+    </properties>
+
+    <parent>
+        <groupId>com.yangzb</groupId>
+        <artifactId>spring-boot-starter-springfox-swagger</artifactId>
+        <version>P-1.0.0-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <dependencies>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>${swagger2.version}</version>
+        </dependency>
+        <!--<dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>${swagger2.version}</version>
+        </dependency>-->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-bean-validators</artifactId>
+            <version>${swagger2.version}</version>
+        </dependency>
+    </dependencies>
+</project>

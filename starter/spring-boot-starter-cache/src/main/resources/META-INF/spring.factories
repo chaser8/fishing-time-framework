@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.tydic.dev1.cache.autoconfigure.CacheAutoConfiguration

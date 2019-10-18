@@ -1,0 +1,19 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.yangzb</groupId>
+    <artifactId>building</artifactId>
+    <packaging>pom</packaging>
+    <parent>
+        <groupId>com.yangzb</groupId>
+        <artifactId>framework</artifactId>
+        <version>P-1.0.0-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+    <modules>
+        <module>../</module>
+        <module>../dependencies-parent</module>
+        <module>../starter</module>
+        <module>../common</module>
+    </modules>
+</project>

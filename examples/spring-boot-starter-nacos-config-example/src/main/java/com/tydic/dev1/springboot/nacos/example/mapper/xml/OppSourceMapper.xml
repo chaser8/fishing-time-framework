@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tydic.openapi.sale.mapper.OppSourceMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.tydic.openapi.sale.entity.OppSourceEntity">
+        <id column="OPP_SOURCE_ID" property="oppSourceId" />
+        <result column="OPP_SOURCE_NAME" property="oppSourceName" />
+        <result column="OPP_SOURCE_CODE" property="oppSourceCode" />
+        <result column="STATUS_CD" property="statusCd" />
+        <result column="STATUS_DATE" property="statusDate" />
+        <result column="CREATE_STAFF" property="createStaff" />
+        <result column="CREATE_DATE" property="createDate" />
+        <result column="UPDATE_STAFF" property="updateStaff" />
+        <result column="UPDATE_DATE" property="updateDate" />
+        <result column="REMARK" property="remark" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        OPP_SOURCE_ID, OPP_SOURCE_NAME, OPP_SOURCE_CODE, STATUS_CD, STATUS_DATE, CREATE_STAFF, CREATE_DATE, UPDATE_STAFF, UPDATE_DATE, REMARK
+    </sql>
+
+</mapper>

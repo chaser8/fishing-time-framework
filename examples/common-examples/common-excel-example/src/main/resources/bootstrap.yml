@@ -1,0 +1,33 @@
+server:
+  port: 8081
+spring:
+  profiles:
+    active: dev
+  application:
+    name: common-excel-example
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.10.52:8848
+      config:
+        namespace: f79379bd-9e8e-40de-9c1b-0d31fd9a9d3e
+        file-extension: yaml
+        server-addr: 192.168.10.52:8848
+        ext-config:
+          - data-id: database-${spring.profiles.active}.yaml
+            group: database
+            refresh: true
+          - data-id: common-${spring.profiles.active}.yaml
+            group: common
+            refresh: true
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+logging:
+  level:
+    root: info
+    com.alibaba.nacos.client.naming: error
+    com:
+      tydic:
+        dev1:
+          sale: debug
