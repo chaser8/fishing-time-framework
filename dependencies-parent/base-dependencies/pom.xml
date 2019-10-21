@@ -155,7 +155,7 @@
             </dependency>
             <!--open-api swagger2 end-->
 
-            <!--tydic starter-->
+            <!--fishingtime starter-->
             <dependency>
                 <groupId>com.fishingtime</groupId>
                 <artifactId>spring-boot-starter-hbase-1.1.2</artifactId>
@@ -253,7 +253,7 @@
             </dependency>
 
 
-            <!--tydic common-->
+            <!--fishingtime common-->
             <dependency>
                 <groupId>com.fishingtime</groupId>
                 <artifactId>common-base</artifactId>

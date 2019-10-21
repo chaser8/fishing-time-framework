@@ -94,7 +94,7 @@ public class PermissionServiceImpl implements PermissionService {
      * 获取所有权限
      *
      * @param authDetails
-     * @return java.util.List<com.tydic.dev1.common.auth.upms.config.Privilege>
+     * @return java.util.List<com.fishingtime.dev1.common.auth.upms.config.Privilege>
      * @throws
      * @Description:
      * @author

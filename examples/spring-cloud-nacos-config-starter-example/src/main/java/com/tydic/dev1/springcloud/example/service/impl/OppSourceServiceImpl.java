@@ -1,9 +1,9 @@
-package com.tydic.dev1.springcloud.example.service.impl;
+package com.fishingtime.dev1.springcloud.example.service.impl;
 
-import com.tydic.dev1.common.base.service.ServiceImpl;
-import com.tydic.dev1.springcloud.example.entity.OppSourceEntity;
-import com.tydic.dev1.springcloud.example.mapper.OppSourceMapper;
-import com.tydic.dev1.springcloud.example.service.OppSourceService;
+import com.fishingtime.dev1.common.base.service.ServiceImpl;
+import com.fishingtime.dev1.springcloud.example.entity.OppSourceEntity;
+import com.fishingtime.dev1.springcloud.example.mapper.OppSourceMapper;
+import com.fishingtime.dev1.springcloud.example.service.OppSourceService;
 import org.springframework.stereotype.Service;
 
 /**

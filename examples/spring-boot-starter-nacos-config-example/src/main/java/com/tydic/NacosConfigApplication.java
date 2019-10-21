@@ -1,4 +1,4 @@
-package com.tydic;
+package com.fishingtime;
 
 import com.alibaba.nacos.api.config.annotation.NacosConfigurationProperties;
 import com.alibaba.nacos.spring.context.annotation.config.NacosPropertySource;
@@ -16,7 +16,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 //})
 
 //@EnableSwagger2
-@MapperScan("com.tydic.**.mapper*")
+@MapperScan("com.fishingtime.**.mapper*")
 //@NacosConfigurationProperties(dataId = "test", groupId = "example",autoRefreshed = true)
 //@NacosPropertySource(dataId = "mysql.properties",groupId = "example",autoRefreshed = true)
 @NacosPropertySource(dataId = "testp",groupId = "example",autoRefreshed = true)

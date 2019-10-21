@@ -1,7 +1,7 @@
-package com.tydic.dev1.springcloud.example.mapper;
+package com.fishingtime.dev1.springcloud.example.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.tydic.dev1.springcloud.example.entity.OppSourceEntity;
+import com.fishingtime.dev1.springcloud.example.entity.OppSourceEntity;
 
 /**
  * <p>

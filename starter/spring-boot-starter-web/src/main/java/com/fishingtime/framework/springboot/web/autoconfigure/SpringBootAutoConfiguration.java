@@ -13,7 +13,6 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * @ComponentScan(basePackages = {"com.tydic.dev1"},excludeFilters = {@ComponentScan.Filter(type = FilterType.REGEX, pattern = "com\\.tydic\\.dev1\\.sale\\.base\\.clue\\.controller\\.([^\\.].*)BaseController")})
  * @program:
  * @description:
  * @author:

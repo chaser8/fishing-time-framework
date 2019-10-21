@@ -1,4 +1,4 @@
-package com.tydic.dev1.springcloud.controller;
+package com.fishingtime.dev1.springcloud.controller;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;

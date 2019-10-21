@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.tydic.openapi.sale.mapper.OppSourceMapper">
+<mapper namespace="com.fishingtime.openapi.sale.mapper.OppSourceMapper">
 
     <!-- 通用查询映射结果 -->
-    <resultMap id="BaseResultMap" type="com.tydic.openapi.sale.entity.OppSourceEntity">
+    <resultMap id="BaseResultMap" type="com.fishingtime.openapi.sale.entity.OppSourceEntity">
         <id column="OPP_SOURCE_ID" property="oppSourceId" />
         <result column="OPP_SOURCE_NAME" property="oppSourceName" />
         <result column="OPP_SOURCE_CODE" property="oppSourceCode" />

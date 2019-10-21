@@ -1,17 +1,17 @@
-package com.tydic.dev1.springboot.nacos.example.controller;
+package com.fishingtime.dev1.springboot.nacos.example.controller;
 
 import cn.hutool.core.bean.BeanUtil;
 import com.baomidou.mybatisplus.core.conditions.Wrapper;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
-import com.tydic.dev1.common.base.page.PageRequestBody;
-import com.tydic.dev1.springboot.nacos.example.controller.vo.OppSource;
-import com.tydic.dev1.springboot.nacos.example.entity.OppSourceEntity;
-import com.tydic.dev1.springboot.nacos.example.service.OppSourceService;
+import com.fishingtime.dev1.common.base.page.PageRequestBody;
+import com.fishingtime.dev1.springboot.nacos.example.controller.vo.OppSource;
+import com.fishingtime.dev1.springboot.nacos.example.entity.OppSourceEntity;
+import com.fishingtime.dev1.springboot.nacos.example.service.OppSourceService;
 import io.swagger.annotations.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
-import com.tydic.dev1.common.base.api.ResponseEntity;
+import com.fishingtime.dev1.common.base.api.ResponseEntity;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 

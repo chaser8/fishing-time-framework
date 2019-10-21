@@ -1,4 +1,4 @@
-package com.tydic.dev1.springcloud.example.entity;
+package com.fishingtime.dev1.springcloud.example.entity;
 
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;

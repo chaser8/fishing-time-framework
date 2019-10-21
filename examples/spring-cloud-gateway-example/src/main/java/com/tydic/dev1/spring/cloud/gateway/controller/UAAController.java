@@ -1,4 +1,4 @@
-package com.tydic.dev1.spring.cloud.gateway.controller;
+package com.fishingtime.dev1.spring.cloud.gateway.controller;
 
 import org.springframework.http.HttpRequest;
 import org.springframework.web.bind.annotation.GetMapping;

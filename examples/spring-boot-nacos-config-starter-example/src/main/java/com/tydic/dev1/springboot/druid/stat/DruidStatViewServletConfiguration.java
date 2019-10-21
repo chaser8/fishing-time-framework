@@ -13,10 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.tydic.dev1.springboot.druid.stat;
+package com.fishingtime.dev1.springboot.druid.stat;
 
 import com.alibaba.druid.support.http.StatViewServlet;
-import com.tydic.dev1.springboot.druid.properties.DruidStatProperties;
+import com.fishingtime.dev1.springboot.druid.properties.DruidStatProperties;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnWebApplication;
 import org.springframework.boot.web.servlet.ServletRegistrationBean;
 import org.springframework.context.annotation.Bean;

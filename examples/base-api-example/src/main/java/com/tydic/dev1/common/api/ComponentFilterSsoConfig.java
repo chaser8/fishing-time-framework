@@ -1,4 +1,4 @@
-package com.tydic.dev1.common.api;
+package com.fishingtime.dev1.common.api;
 
 import org.jasig.cas.client.authentication.AuthenticationFilter;
 import org.jasig.cas.client.session.SingleSignOutFilter;

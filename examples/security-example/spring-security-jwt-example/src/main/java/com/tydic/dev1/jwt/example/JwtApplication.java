@@ -1,4 +1,4 @@
-package com.tydic.dev1.jwt.example;
+package com.fishingtime.dev1.jwt.example;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

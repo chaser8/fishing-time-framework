@@ -20,7 +20,7 @@ spring:
         consumerGroupId: c__test_2x
         bootstrapServers: 192.168.10.151:9976
         username: dev1
-        clustername: tydic-bigdata-dev1
+        clustername: fishingtime-bigdata-dev1
         tenantID: 2
         enableBdb: true
         password: 1qaz2wsx

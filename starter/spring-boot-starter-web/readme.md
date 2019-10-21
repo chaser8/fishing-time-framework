@@ -30,7 +30,7 @@
 </dependency>
 ```
 ## 改造点
-1. 自动扫描  com.tydic.dev1包
+1. 自动扫描  com.fishingtime.dev1包
 2. 通用web异常处理 ResponseBodyAdvice
 3. 自定义DefaultErrorAttributes，解决springmv 处理消息404等返回不统一问题
 4. 重写RequestMappingHandlerMapping，支持重复路径定义，优先使用子类实现

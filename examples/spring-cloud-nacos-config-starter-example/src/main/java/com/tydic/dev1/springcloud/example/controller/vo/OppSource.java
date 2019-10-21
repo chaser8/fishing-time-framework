@@ -1,4 +1,4 @@
-package com.tydic.dev1.springcloud.example.controller.vo;
+package com.fishingtime.dev1.springcloud.example.controller.vo;
 
 import cn.hutool.core.util.StrUtil;
 import io.swagger.annotations.ApiModel;

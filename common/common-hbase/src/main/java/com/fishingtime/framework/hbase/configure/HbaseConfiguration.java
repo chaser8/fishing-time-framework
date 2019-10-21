@@ -13,7 +13,7 @@ import lombok.Setter;
 @Setter
 public class HbaseConfiguration {
     /**
-     *  ZooKeeper 链接地址 如：hdp6.tydic.com:2181,hdp7.tydic.com:2181,hdp8.tydic.com:2181
+     *  ZooKeeper 链接地址 如：hdp6.fishingtime.com:2181,hdp7.fishingtime.com:2181,hdp8.fishingtime.com:2181
      */
     private String quorum;
     /**

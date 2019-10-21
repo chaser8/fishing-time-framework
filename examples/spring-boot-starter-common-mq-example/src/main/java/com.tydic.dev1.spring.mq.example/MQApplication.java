@@ -1,10 +1,10 @@
-package com.tydic.dev1.spring.mq.example;
+package com.fishingtime.dev1.spring.mq.example;
 
-import com.tydic.dev1.common.base.util.SpringBeanHelper;
-import com.tydic.mq.api.ctgmq.consumer.CtgConsumser;
-import com.tydic.mq.service.MqConsumerFactory;
-import com.tydic.mq.service.MqConsumerTemplate;
-import com.tydic.mq.service.MqProductTemplate;
+import com.fishingtime.dev1.common.base.util.SpringBeanHelper;
+import com.fishingtime.mq.api.ctgmq.consumer.CtgConsumser;
+import com.fishingtime.mq.service.MqConsumerFactory;
+import com.fishingtime.mq.service.MqConsumerTemplate;
+import com.fishingtime.mq.service.MqProductTemplate;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;

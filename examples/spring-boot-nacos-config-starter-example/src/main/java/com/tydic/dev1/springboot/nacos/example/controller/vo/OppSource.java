@@ -1,7 +1,7 @@
-package com.tydic.dev1.springboot.nacos.example.controller.vo;
+package com.fishingtime.dev1.springboot.nacos.example.controller.vo;
 
 import cn.hutool.core.util.StrUtil;
-import com.tydic.dev1.common.base.api.BaseVO;
+import com.fishingtime.dev1.common.base.api.BaseVO;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Getter;

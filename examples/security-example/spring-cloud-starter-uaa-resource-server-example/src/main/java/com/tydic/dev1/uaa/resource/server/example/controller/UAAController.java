@@ -1,4 +1,4 @@
-package com.tydic.dev1.uaa.resource.server.example.controller;
+package com.fishingtime.dev1.uaa.resource.server.example.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

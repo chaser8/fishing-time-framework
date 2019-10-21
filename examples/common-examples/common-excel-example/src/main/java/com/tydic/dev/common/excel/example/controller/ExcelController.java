@@ -1,6 +1,6 @@
-package com.tydic.dev.common.excel.example.controller;
+package com.fishingtime.dev.common.excel.example.controller;
 
-import com.tydic.dev1.common.excel.ExcelHelper;
+import com.fishingtime.dev1.common.excel.ExcelHelper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

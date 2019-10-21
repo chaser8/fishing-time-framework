@@ -78,7 +78,7 @@ public class ControllerAdvice {
      * errorHandler 前台传参json转换错误
      * @Description:  
      * @param ex
-     * @return com.tydic.dev1.common.base.api.Response
+     * @return com.fishingtime.dev1.common.base.api.Response
      * @author
      * @date 2019/4/10 08:55
      * @throws
@@ -99,7 +99,7 @@ public class ControllerAdvice {
      * errorHandler 前台传参json转换错误
      * @Description:
      * @param ex
-     * @return com.tydic.dev1.common.base.api.Response
+     * @return com.fishingtime.dev1.common.base.api.Response
      * @author
      * @date 2019/4/10 08:55
      * @throws
@@ -119,7 +119,7 @@ public class ControllerAdvice {
      * busiExceptionHandler 程序主动抛出的业务异常处理
      * @Description:  
      * @param ex
-     * @return com.tydic.dev1.common.base.api.Response
+     * @return com.fishingtime.dev1.common.base.api.Response
      * @author
      * @date 2019/4/10 08:55
      * @throws
@@ -134,7 +134,7 @@ public class ControllerAdvice {
      * bindExceptionHandler 校验不通过异常处理
      * @Description:  
      * @param ex
-     * @return com.tydic.dev1.common.base.api.Response
+     * @return com.fishingtime.dev1.common.base.api.Response
      * @author
      * @date 2019/4/10 08:54
      * @throws

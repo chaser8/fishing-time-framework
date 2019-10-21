@@ -1,4 +1,4 @@
-package com.tydic.dev1.spring.cloud.gateway;
+package com.fishingtime.dev1.spring.cloud.gateway;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

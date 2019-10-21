@@ -19,12 +19,12 @@ import org.springframework.context.annotation.Configuration;
  * @create: 2019-03-05 10:56
  **/
 @Configuration
-@MapperScan("com.tydic.**.mapper")
+@MapperScan("com.fishingtime.**.mapper")
 @EnableConfigurationProperties(MybatisPlusProperties.class)
 @AutoConfigureBefore(com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration.class)
 public class MybatisPlusAutoConfiguration {
-    private static String BASE_MAPPER_LOCATION = "classpath*:com/tydic/**/xml/*Mapper.xml";
-    private static String TYPE_ALIASES_PACKAGE = "com.tydic.**.entity";
+    private static String BASE_MAPPER_LOCATION = "classpath*:com/fishingtime/**/xml/*Mapper.xml";
+    private static String TYPE_ALIASES_PACKAGE = "com.fishingtime.**.entity";
 
     /**
      * MybatisPlusAutoConfiguration 
@@ -59,7 +59,7 @@ public class MybatisPlusAutoConfiguration {
      * 改造必须加了 TableField 注解的才解析成 sql
      *
      * @param 
-     * @return com.tydic.dev1.mybatis.plus.autoconfigure.FieldFilterSqlInjector
+     * @return com.fishingtime.dev1.mybatis.plus.autoconfigure.FieldFilterSqlInjector
      * @author
      * @date 2019-07-05 09:19
      */

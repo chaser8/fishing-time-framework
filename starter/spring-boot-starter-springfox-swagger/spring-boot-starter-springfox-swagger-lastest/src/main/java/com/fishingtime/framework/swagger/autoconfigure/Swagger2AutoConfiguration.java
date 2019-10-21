@@ -83,7 +83,7 @@ public class Swagger2AutoConfiguration {
         return new ApiInfoBuilder()
                 .title("openApi")
                 .description("openApi")
-                .contact(new Contact("tydic", "http://www.tydic.com", "tydic@tydic.com"))
+                .contact(new Contact("fishingtime", "http://www.fishingtime.com", "fishingtime@fishingtime.com"))
                 .build();
     }
 }

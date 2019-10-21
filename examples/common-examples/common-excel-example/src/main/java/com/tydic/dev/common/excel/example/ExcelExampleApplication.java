@@ -1,4 +1,4 @@
-package com.tydic.dev.common.excel.example;
+package com.fishingtime.dev.common.excel.example;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

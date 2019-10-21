@@ -26,7 +26,7 @@ import java.util.List;
  * @create: 2019-05-08 14:28
  **/
 @Configuration
-@ComponentScan(basePackages = "com.tydic.dev1")
+@ComponentScan(basePackages = "com.fishingtime.dev1")
 @Slf4j
 public class GatewayAutoConfiguration {
     @Primary

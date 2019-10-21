@@ -533,7 +533,7 @@ public class LinkedMapEntry<K, V> extends LinkedHashMap<K, V> implements Cloneab
 	 * Title: getDate<br/>
 	 * @param key
 	 * @return
-	 * @see com.tydic.base.util.IMapEntry#getDate(Object)
+	 * @see com.fishingtime.base.util.IMapEntry#getDate(Object)
 	 */
 	@Override
     public Date getDate(K key) {
@@ -545,7 +545,7 @@ public class LinkedMapEntry<K, V> extends LinkedHashMap<K, V> implements Cloneab
 	 * @param key
 	 * @param date
 	 * @return
-	 * @see com.tydic.base.util.IMapEntry#getDate(Object, Date)
+	 * @see com.fishingtime.base.util.IMapEntry#getDate(Object, Date)
 	 */
 	@Override
     public Date getDate(K key, Date date) {
@@ -563,7 +563,7 @@ public class LinkedMapEntry<K, V> extends LinkedHashMap<K, V> implements Cloneab
 	 * Title: getArray<br/>
 	 * @param key
 	 * @return
-	 * @see com.tydic.base.util.IMapEntry#getArray(Object)
+	 * @see com.fishingtime.base.util.IMapEntry#getArray(Object)
 	 */
 	@Override
     public String[] getArray(K key) {
@@ -575,7 +575,7 @@ public class LinkedMapEntry<K, V> extends LinkedHashMap<K, V> implements Cloneab
 	 * @param key
 	 * @param defauleValue
 	 * @return
-	 * @see com.tydic.base.util.IMapEntry#getArray(Object, String[])
+	 * @see com.fishingtime.base.util.IMapEntry#getArray(Object, String[])
 	 */
 	@Override
     public String[] getArray(K key, String[] defauleValue) {

@@ -1,4 +1,4 @@
-package com.tydic.dev1.common.ftp.example;
+package com.fishingtime.dev1.common.ftp.example;
 
 import cn.hutool.extra.ftp.AbstractFtp;
 import lombok.extern.slf4j.Slf4j;

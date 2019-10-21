@@ -1,4 +1,4 @@
-package com.tydic.dev1.springcloud.uaa.server.example;
+package com.fishingtime.dev1.springcloud.uaa.server.example;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

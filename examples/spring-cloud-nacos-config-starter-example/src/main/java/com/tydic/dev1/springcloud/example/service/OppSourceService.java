@@ -1,7 +1,7 @@
-package com.tydic.dev1.springcloud.example.service;
+package com.fishingtime.dev1.springcloud.example.service;
 
-import com.tydic.dev1.common.base.service.IService;
-import com.tydic.dev1.springcloud.example.entity.OppSourceEntity;
+import com.fishingtime.dev1.common.base.service.IService;
+import com.fishingtime.dev1.springcloud.example.entity.OppSourceEntity;
 
 /**
  * <p>

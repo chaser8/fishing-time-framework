@@ -1,4 +1,4 @@
-package com.tydic.dev1.flink.local;
+package com.fishingtime.dev1.flink.local;
 
 import org.apache.flink.api.common.serialization.SimpleStringSchema;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;

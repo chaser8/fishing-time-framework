@@ -1,7 +1,7 @@
-package com.tydic.dev1.springboot.nacos.example.service;
+package com.fishingtime.dev1.springboot.nacos.example.service;
 
-import com.tydic.dev1.common.base.service.IService;
-import com.tydic.dev1.springboot.nacos.example.entity.OppSourceEntity;
+import com.fishingtime.dev1.common.base.service.IService;
+import com.fishingtime.dev1.springboot.nacos.example.entity.OppSourceEntity;
 
 /**
  * <p>

@@ -1,4 +1,4 @@
-package com.tydic.dev1.common.api;
+package com.fishingtime.dev1.common.api;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

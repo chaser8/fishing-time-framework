@@ -1,16 +1,16 @@
-package com.tydic.dev1.springcloud.example.controller;
+package com.fishingtime.dev1.springcloud.example.controller;
 
 import cn.hutool.core.bean.BeanUtil;
 import cn.hutool.core.convert.Convert;
 import com.baomidou.mybatisplus.core.conditions.Wrapper;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
-import com.tydic.dev1.common.base.api.ResponseEntity;
-import com.tydic.dev1.common.base.page.Page;
-import com.tydic.dev1.common.base.page.PageRequestBody;
-import com.tydic.dev1.springcloud.example.controller.vo.OppSource;
-import com.tydic.dev1.springcloud.example.entity.OppSourceEntity;
-import com.tydic.dev1.springcloud.example.service.OppSourceService;
+import com.fishingtime.dev1.common.base.api.ResponseEntity;
+import com.fishingtime.dev1.common.base.page.Page;
+import com.fishingtime.dev1.common.base.page.PageRequestBody;
+import com.fishingtime.dev1.springcloud.example.controller.vo.OppSource;
+import com.fishingtime.dev1.springcloud.example.entity.OppSourceEntity;
+import com.fishingtime.dev1.springcloud.example.service.OppSourceService;
 import io.swagger.annotations.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

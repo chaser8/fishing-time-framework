@@ -30,7 +30,7 @@ public class DefaultErrorAttributes extends org.springframework.boot.web.servlet
 
     @Override
     public Map<String, Object> getErrorAttributes(WebRequest webRequest, boolean includeStackTrace) {
-        //在com.tydic.dev1.common.base.api.ResponseBodyAdvice中判断是否为错误返回，如果为错误返回则不转换格式，这里是为了避免ResponseBody的重复嵌套
+        //在com.fishingtime.dev1.common.base.api.ResponseBodyAdvice中判断是否为错误返回，如果为错误返回则不转换格式，这里是为了避免ResponseBody的重复嵌套
         webRequest.setAttribute("isError", true, RequestAttributes.SCOPE_REQUEST);
 
         Map<String, Object> errorMap = super.getErrorAttributes(webRequest, includeStackTrace);

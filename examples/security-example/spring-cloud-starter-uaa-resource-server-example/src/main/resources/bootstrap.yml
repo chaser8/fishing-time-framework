@@ -40,7 +40,7 @@ logging:
         nacos:
           client:
             naming: error
-      tydic.dev1: debug
+      fishingtime.dev1: debug
 security:
   oauth2:
     white-list:

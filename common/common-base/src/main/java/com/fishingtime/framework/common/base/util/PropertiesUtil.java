@@ -1,6 +1,6 @@
 /**   
  * @Title: PropertiesUtil.java
- * @Package com.tydic.util
+ * @Package com.fishingtime.util
  * @author
  * @date 2017年6月12日 上午10:15:40
  * @version 
