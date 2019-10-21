@@ -3,6 +3,7 @@ package com.fishingtime.framework.springboot.web.autoconfigure;
 import cn.hutool.core.util.StrUtil;
 import com.fishingtime.framework.common.base.util.JSONUtil;
 import com.fishingtime.framework.common.web.response.R;
+import com.fishingtime.framework.common.web.response.Response;
 import com.fishingtime.framework.common.web.response.ResultStatus;
 import org.springframework.core.Ordered;
 import org.springframework.core.annotation.Order;
@@ -35,7 +36,7 @@ public class DefaultErrorAttributes extends org.springframework.boot.web.servlet
 
         Map<String, Object> errorMap = super.getErrorAttributes(webRequest, includeStackTrace);
         String message = StrUtil.toString(errorMap.get(ERROR)) + "," + StrUtil.toString(errorMap.get(MESSAGE));
-        return JSONUtil.toBean(new R().setStatus(ResultStatus.SYSTEM_ERROR).setMessage(message), Map.class);
+        return Response.fail(message).getBody();
 
     }
 }

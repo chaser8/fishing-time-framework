@@ -56,12 +56,12 @@ public class PermissionFilter implements GlobalFilter, Ordered {
         }
 
         if (StringUtils.isEmpty(token)) {
-            throw new AuthenticationException(new R().setStatus(ResultStatus.AUTH_ERROR).setMessage("认证失败，请重新登录！"));
+            throw new AuthenticationException(ResultStatus.AUTH_ERROR,"认证失败，请重新登录！");
         }
         SystemUser systemUser = userService.getUserByToken(token);
 
         if (!permissionService.hasPermission(systemUser.getPrivileges(), exchange.getRequest().getURI().getPath())) {
-            throw new ForbiddenException(new R().setStatus(ResultStatus.FORBIDDEN_ERROR).setMessage("您无权访问服务！"));
+            throw new ForbiddenException(ResultStatus.FORBIDDEN_ERROR,"您无权访问服务！");
         }
         return chain.filter(exchange);
 //        return handleHeader(exchange, chain, systemUser);

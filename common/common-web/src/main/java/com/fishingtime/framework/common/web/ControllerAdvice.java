@@ -112,7 +112,7 @@ public class ControllerAdvice {
 //        if(!StrUtil.isEmpty(ex.getMessage())){
 //            response.getBody().setMessage(ex.getMessage());
 //        }
-        return Response.fail(ex.getResponse());
+        return ex.getResponse();
     }
 
     /**
@@ -127,7 +127,7 @@ public class ControllerAdvice {
     @ResponseBody
     @ExceptionHandler(value = BusiException.class)
     public ResponseEntity busiExceptionHandler(BusiException ex) {
-        return Response.fail(ex.getResponse());
+        return ex.getResponse();
     }
 
     /**

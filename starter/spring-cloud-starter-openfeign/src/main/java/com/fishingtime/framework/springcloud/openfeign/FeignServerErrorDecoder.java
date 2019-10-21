@@ -24,13 +24,6 @@ public class FeignServerErrorDecoder implements ErrorDecoder {
         if(null!=response.body()){
             responseBodyStr = response.body().toString();
         }
-        R responseBodyError = new R().setStatus(ResultStatus.SYSTEM_ERROR);
-        try {
-            responseBodyError = JSONUtil.parseObject(responseBodyStr, R.class);
-        } catch (Exception e) {
-            responseBodyError.setMessage(responseBodyStr);
-        }
-        responseBodyError.setMessage("服务调用异常："+ responseBodyError.getMessage());
-        return new SystemException(responseBodyError);
+        return new SystemException(ResultStatus.SYSTEM_ERROR,"服务调用异常："+ responseBodyStr);
     }
 }

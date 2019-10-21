@@ -32,6 +32,6 @@ public class FeignClientErrorHandler {
     @ExceptionHandler(value = FeignException.class)
     public ResponseEntity<R> errorHandler(FeignException ex) {
         log.error("",ex);
-        return Response.fail(new R().setStatus(ResultStatus.INTF_ERROR).setMessage("调用服务异常："+ex.getMessage()));
+        return Response.fail(ResultStatus.INTF_ERROR,"调用服务异常："+ex.getMessage());
     }
 }
