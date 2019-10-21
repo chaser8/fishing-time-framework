@@ -8,5 +8,5 @@ import java.io.Serializable;
  * @author:
  * @create: 2019-03-22 10:34
  **/
-public interface EntityBase extends Serializable {
+public interface BaseEntity extends Serializable {
 }

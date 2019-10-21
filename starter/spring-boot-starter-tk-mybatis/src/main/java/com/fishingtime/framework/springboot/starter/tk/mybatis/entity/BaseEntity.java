@@ -11,5 +11,5 @@ import lombok.Setter;
  **/
 @Getter
 @Setter
-public class EntityBase implements com.fishingtime.framework.common.base.entity.EntityBase {
+public class BaseEntity implements com.fishingtime.framework.common.base.entity.BaseEntity {
 }

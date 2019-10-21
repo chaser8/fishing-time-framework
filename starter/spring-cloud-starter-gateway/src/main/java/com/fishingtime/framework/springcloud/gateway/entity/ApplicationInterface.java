@@ -1,6 +1,6 @@
 package com.fishingtime.framework.springcloud.gateway.entity;
 
-import com.fishingtime.framework.springboot.starter.tk.mybatis.entity.EntityBase;
+import com.fishingtime.framework.springboot.starter.tk.mybatis.entity.BaseEntity;
 import lombok.Data;
 
 import javax.persistence.Column;
@@ -15,7 +15,7 @@ import javax.persistence.Id;
  * @since 2019-05-22
  */
 @Data
-public class ApplicationInterface extends EntityBase {
+public class ApplicationInterface extends BaseEntity {
 
     private static final long serialVersionUID = 1L;
 

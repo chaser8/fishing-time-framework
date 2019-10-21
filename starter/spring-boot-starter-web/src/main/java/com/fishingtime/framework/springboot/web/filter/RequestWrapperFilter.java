@@ -12,8 +12,8 @@ import java.io.IOException;
  * @description:
  * @create: 2019-08-26 15:04
  **/
-@WebFilter(filterName = "requestWrapperFilter",urlPatterns = { "/**"})
-@Order(1)
+//@WebFilter(filterName = "requestWrapperFilter",urlPatterns = { "/*"})
+//@Order(1)
 public class RequestWrapperFilter implements Filter {
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {

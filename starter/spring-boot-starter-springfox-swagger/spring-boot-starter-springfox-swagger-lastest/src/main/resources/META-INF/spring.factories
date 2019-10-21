@@ -1,2 +1,2 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-Swagger2AutoConfiguration
+com.fishingtime.framework.swagger.autoconfigure.Swagger2AutoConfiguration

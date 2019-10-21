@@ -1,7 +1,7 @@
 package com.fishingtime.framework.common.codegenerator;
 
 import cn.hutool.core.util.ReflectUtil;
-import com.fishingtime.framework.common.base.entity.EntityBase;
+import com.fishingtime.framework.common.base.entity.BaseEntity;
 import com.fishingtime.framework.common.base.util.SpringBeanHelper;
 import org.apache.ibatis.executor.Executor;
 import org.apache.ibatis.mapping.MappedStatement;
@@ -29,7 +29,7 @@ public class CodeInterceptor implements Interceptor {
         Object param = args[1];
         MappedStatement mappedStatement = (MappedStatement)args[0];
         //只有再insert以及入参为实体对象时才执行编码生成
-        if(mappedStatement.getSqlCommandType()== SqlCommandType.INSERT&&param instanceof EntityBase){
+        if(mappedStatement.getSqlCommandType()== SqlCommandType.INSERT&&param instanceof BaseEntity){
             Field[] fields = ReflectUtil.getFields(param.getClass());
             if(null!=fields){
                 for (Field field : fields) {

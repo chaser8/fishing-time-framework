@@ -5,6 +5,7 @@ import lombok.Setter;
 import lombok.experimental.Accessors;
 
 import java.io.Serializable;
+import java.util.LinkedHashMap;
 import java.util.Optional;
 
 /**
@@ -15,7 +16,7 @@ import java.util.Optional;
  **/
 @Setter
 @Accessors(chain = true)
-public class R<T> implements Serializable {
+public class R<T> extends LinkedHashMap<String,Object> implements Serializable {
     public String getCode() {
         return status.getCode();
     }
@@ -24,6 +25,9 @@ public class R<T> implements Serializable {
         message = Optional.ofNullable(message).orElse(status.getMessage());
         return message;
     }
+
+    public static final String CODE = "code";
+    public static final String MESSAGE = "message";
 
     public T getData() {
         return data;

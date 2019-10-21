@@ -22,7 +22,6 @@ public class SignConfiguration implements WebMvcConfigurer {
     public void addInterceptors(InterceptorRegistry registry) {
         if(config.getSign().isEnable()){
             registry.addInterceptor(new SignInterceptor(config.getSign())).addPathPatterns(config.getSign().getPatterns());
-
         }
     }
 }
