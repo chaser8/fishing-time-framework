@@ -4,9 +4,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
- * @program: bigdata-dev1
+ * @program:
  * @description:
- * @author: yzb
+ * @author:
  * @create: 2019-03-29 14:52
  **/
 @SpringBootApplication

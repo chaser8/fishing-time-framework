@@ -10,9 +10,9 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * @program: bigdata-dev1
+ * @program:
  * @description:
- * @author: yzb
+ * @author:
  * @create: 2019-05-14 17:17
  **/
 @RestController

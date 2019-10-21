@@ -17,7 +17,7 @@ import java.io.UnsupportedEncodingException;
 /**
  * @program: framework
  * @description:
- * @author: yzb
+ * @author:
  * @create: 2019-08-06 11:29
  **/
 @SpringBootApplication
@@ -26,7 +26,7 @@ public class MQApplication {
     public static void main(String[] args) throws Exception {
         ConfigurableApplicationContext run = SpringApplication.run(MQApplication.class, args);
         MqConsumerTemplate bean = run.getBean(MqConsumerTemplate.class);
-        bean.consumerMessage("yzb_test_2x", event -> {
+        bean.consumerMessage("_test_2x", event -> {
             try {
                 log.info("" + event.hashCode());
             } catch (Exception e) {

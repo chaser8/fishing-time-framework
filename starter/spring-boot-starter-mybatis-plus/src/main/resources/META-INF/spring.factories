@@ -1,2 +1,2 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-com.yangzb.framework.mybatis.plus.autoconfigure.MybatisPlusAutoConfiguration
+com.fishingtime.framework.mybatis.plus.autoconfigure.MybatisPlusAutoConfiguration

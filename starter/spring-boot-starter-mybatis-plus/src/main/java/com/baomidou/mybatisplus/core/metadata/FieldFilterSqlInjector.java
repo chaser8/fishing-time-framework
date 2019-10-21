@@ -5,7 +5,7 @@ import com.baomidou.mybatisplus.core.injector.AbstractMethod;
 import com.baomidou.mybatisplus.core.injector.DefaultSqlInjector;
 import com.baomidou.mybatisplus.core.toolkit.Assert;
 import com.baomidou.mybatisplus.core.toolkit.GlobalConfigUtils;
-import com.yangzb.framework.common.base.util.ClassUtil;
+import com.fishingtime.framework.common.base.util.ClassUtil;
 import org.apache.ibatis.builder.MapperBuilderAssistant;
 
 import java.lang.reflect.Field;
@@ -16,9 +16,9 @@ import java.util.stream.Collectors;
 
 /**
  * 改造必须加了 TableField 注解的才解析成 sql
- * @program: sale-center
+ * @program:
  * @description:
- * @author: yzb
+ * @author:
  * @create: 2019-06-28 10:43
  **/
 public class FieldFilterSqlInjector extends DefaultSqlInjector {

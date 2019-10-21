@@ -1,8 +1,0 @@
-cache:
-  mode: ctg
-  ctg:
-    password: "DEV_CACHE#1qaz@wsX"
-    nodes:
-      - host: 192.168.10.152
-        port: 19999
-    database: 205

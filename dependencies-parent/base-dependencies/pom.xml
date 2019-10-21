@@ -6,7 +6,7 @@
     <name>base-dependencies</name>
     <packaging>pom</packaging>
     <parent>
-        <groupId>com.yangzb</groupId>
+        <groupId>com.fishingtime</groupId>
         <artifactId>dependencies-parent</artifactId>
         <version>P-1.0.0-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
@@ -36,6 +36,12 @@
                 <artifactId>mybatis-plus-generator</artifactId>
                 <version>${mybatis.plus.version}</version>
             </dependency>
+
+            <dependency>
+                <groupId>org.mybatis</groupId>
+                <artifactId>mybatis</artifactId>
+                <version>${mybatis.version}</version>
+            </dependency>
             <dependency>
                 <groupId>com.baomidou</groupId>
                 <artifactId>mybatis-plus-boot-starter</artifactId>
@@ -58,12 +64,6 @@
                 <artifactId>junit</artifactId>
                 <version>${junit.version}</version>
             </dependency>
-
-            <!--<dependency>
-                <groupId>com.tydic</groupId>
-                <artifactId>ctg-cache-nclient</artifactId>
-                <version>${ctg.cache.nclient.version}</version>
-            </dependency>-->
 
             <dependency>
                 <groupId>org.mybatis.spring.boot</groupId>
@@ -96,6 +96,12 @@
             </dependency>
 
             <dependency>
+                <groupId>tk.mybatis</groupId>
+                <artifactId>mapper-spring-boot-starter</artifactId>
+                <version>${tk.mybatis.version}</version>
+            </dependency>
+
+            <dependency>
                 <groupId>com.google.guava</groupId>
                 <artifactId>guava</artifactId>
                 <version>${guava.version}</version>
@@ -111,11 +117,11 @@
                 <version>${commons.net.version}</version>
             </dependency>
 
-            <dependency>
+           <!-- <dependency>
                 <groupId>com.baomidou</groupId>
                 <artifactId>mybatis-plus</artifactId>
                 <version>${mybatis.plus.version}</version>
-            </dependency>
+            </dependency>-->
 
             <!--open-api swagger2 start-->
             <dependency>
@@ -151,83 +157,93 @@
 
             <!--tydic starter-->
             <dependency>
-                <groupId>com.yangzb</groupId>
+                <groupId>com.fishingtime</groupId>
                 <artifactId>spring-boot-starter-hbase-1.1.2</artifactId>
-                <version>${parent.version}</version>
+                <version>${framework.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>com.yangzb</groupId>
+                <groupId>com.fishingtime</groupId>
                 <artifactId>spring-cloud-starter-openfeign</artifactId>
-                <version>${parent.version}</version>
+                <version>${framework.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.yangzb</groupId>
+                <groupId>com.fishingtime</groupId>
                 <artifactId>spring-boot-starter-cache</artifactId>
-                <version>${parent.version}</version>
+                <version>${framework.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>com.yangzb</groupId>
+                <groupId>com.fishingtime</groupId>
                 <artifactId>spring-boot-starter-mybatis-plus</artifactId>
-                <version>${parent.version}</version>
+                <version>${framework.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>com.yangzb</groupId>
+                <groupId>com.fishingtime</groupId>
                 <artifactId>spring-boot-starter-nacos-config</artifactId>
-                <version>${parent.version}</version>
+                <version>${framework.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.yangzb</groupId>
+                <groupId>commons-io</groupId>
+                <artifactId>commons-io</artifactId>
+                <version>${commons.io.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fishingtime</groupId>
                 <artifactId>spring-cloud-starter-alibaba</artifactId>
-                <version>${parent.version}</version>
+                <version>${framework.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fishingtime</groupId>
+                <artifactId>spring-boot-starter-tk-mybatis</artifactId>
+                <version>${framework.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>com.yangzb</groupId>
+                <groupId>com.fishingtime</groupId>
                 <artifactId>spring-boot-starter</artifactId>
-                <version>${parent.version}</version>
+                <version>${framework.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.yangzb</groupId>
+                <groupId>com.fishingtime</groupId>
                 <artifactId>spring-boot-starter-common-ftp</artifactId>
-                <version>${parent.version}</version>
+                <version>${framework.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>com.yangzb</groupId>
+                <groupId>com.fishingtime</groupId>
                 <artifactId>spring-boot-starter-common-mq</artifactId>
-                <version>${parent.version}</version>
+                <version>${framework.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>com.yangzb</groupId>
+                <groupId>com.fishingtime</groupId>
                 <artifactId>spring-boot-starter-web</artifactId>
-                <version>${parent.version}</version>
+                <version>${framework.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>com.yangzb</groupId>
+                <groupId>com.fishingtime</groupId>
                 <artifactId>spring-cloud-starter-gateway</artifactId>
-                <version>${parent.version}</version>
+                <version>${framework.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>com.yangzb</groupId>
+                <groupId>com.fishingtime</groupId>
                 <artifactId>spring-cloud-starter-nacos-config</artifactId>
-                <version>${parent.version}</version>
+                <version>${framework.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>com.yangzb</groupId>
+                <groupId>com.fishingtime</groupId>
                 <artifactId>spring-boot-starter-springfox-swagger-lastest</artifactId>
-                <version>${parent.version}</version>
+                <version>${framework.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.yangzb</groupId>
+                <groupId>com.fishingtime</groupId>
                 <artifactId>spring-boot-starter-springfox-swagger-2.7.0</artifactId>
-                <version>${parent.version}</version>
+                <version>${framework.version}</version>
             </dependency>
 
             <dependency>
@@ -239,59 +255,59 @@
 
             <!--tydic common-->
             <dependency>
-                <groupId>com.yangzb</groupId>
+                <groupId>com.fishingtime</groupId>
                 <artifactId>common-base</artifactId>
-                <version>${parent.version}</version>
+                <version>${framework.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>com.yangzb</groupId>
+                <groupId>com.fishingtime</groupId>
                 <artifactId>common-service</artifactId>
-                <version>${parent.version}</version>
+                <version>${framework.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>com.yangzb</groupId>
+                <groupId>com.fishingtime</groupId>
                 <artifactId>common-uaa-bean</artifactId>
-                <version>${parent.version}</version>
+                <version>${framework.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.yangzb</groupId>
+                <groupId>com.fishingtime</groupId>
                 <artifactId>common-uaa-base</artifactId>
-                <version>${parent.version}</version>
+                <version>${framework.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>com.yangzb</groupId>
+                <groupId>com.fishingtime</groupId>
                 <artifactId>common-api</artifactId>
-                <version>${parent.version}</version>
+                <version>${framework.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>com.yangzb</groupId>
+                <groupId>com.fishingtime</groupId>
                 <artifactId>common-codegenerator</artifactId>
-                <version>${parent.version}</version>
+                <version>${framework.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.yangzb</groupId>
+                <groupId>com.fishingtime</groupId>
                 <artifactId>common-hbase</artifactId>
-                <version>${parent.version}</version>
+                <version>${framework.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.yangzb</groupId>
+                <groupId>com.fishingtime</groupId>
                 <artifactId>common-cache</artifactId>
-                <version>${parent.version}</version>
+                <version>${framework.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>com.yangzb</groupId>
+                <groupId>com.fishingtime</groupId>
                 <artifactId>common-web</artifactId>
-                <version>${parent.version}</version>
+                <version>${framework.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.yangzb</groupId>
+                <groupId>com.fishingtime</groupId>
                 <artifactId>common-ftp</artifactId>
-                <version>${parent.version}</version>
+                <version>${framework.version}</version>
             </dependency>
 
             <!--hadoop-->

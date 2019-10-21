@@ -1,7 +1,7 @@
 #cloud环境配置
 nacos:
   config:
-    server-addr: yangzb.cn:8848
+    server-addr: :8848
 #    namespace: 5d076bf4-2ffb-46d7-b028-095fff73c891
 
 server:

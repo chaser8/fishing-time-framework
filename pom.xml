@@ -1,7 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.yangzb</groupId>
+    <groupId>com.fishingtime</groupId>
     <artifactId>framework</artifactId>
     <version>P-1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
@@ -18,15 +18,17 @@
         <hutool.version>4.6.1</hutool.version>
         <lombok.version>1.16.22</lombok.version>
         <mybatis.plus.version>3.2.0</mybatis.plus.version>
+        <tk.mybatis.version>2.1.2</tk.mybatis.version>
         <velocity.version>2.0</velocity.version>
         <jackson.version>2.9.0</jackson.version>
         <springfox.swagger2.version>2.9.2</springfox.swagger2.version>
         <hibernate.validator.version>6.0.13.Final</hibernate.validator.version>
 
-        <parent.version>P-1.0.0-SNAPSHOT</parent.version>
-        <base-dependencies>${parent.version}</base-dependencies>
+        <framework.version>P-1.0.0-SNAPSHOT</framework.version>
+        <base-dependencies>${framework.version}</base-dependencies>
 
         <mybatis.spring.boot.version>2.1.0</mybatis.spring.boot.version>
+        <mybatis.version>3.4.6</mybatis.version>
         <spring.boot.version>2.1.4.RELEASE</spring.boot.version>
         <nacos-config-spring-boot.version>0.2.1</nacos-config-spring-boot.version>
         <spring.cloud.alibaba.version>2.1.0.RELEASE</spring.cloud.alibaba.version>
@@ -37,6 +39,7 @@
         <ctg.cache.nclient.version>2.4.0</ctg.cache.nclient.version>
         <swagger.bootstrap.ui.version>1.9.4</swagger.bootstrap.ui.version>
         <commons.net.version>3.6</commons.net.version>
+        <commons.io.version>2.6</commons.io.version>
     </properties>
 
     <build>

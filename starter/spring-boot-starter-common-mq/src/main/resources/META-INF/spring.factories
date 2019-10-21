@@ -1,3 +1,0 @@
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-com.tydic.mq.autoconfigure.MqConsumerAutoConfiguration,\
-com.tydic.mq.autoconfigure.MqProductAutoConfiguration

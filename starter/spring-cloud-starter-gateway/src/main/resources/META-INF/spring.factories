@@ -1,2 +1,2 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-com.yangzb.framework.springcloud.gateway.GatewayAutoConfiguration
+com.fishingtime.framework.springcloud.gateway.GatewayAutoConfiguration

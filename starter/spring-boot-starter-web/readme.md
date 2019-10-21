@@ -1,7 +1,7 @@
 ## 自动依赖
 ```xml
 <dependency>
-    <groupId>com.yangzb</groupId>
+    <groupId>com.fishingtime</groupId>
     <artifactId>spring-boot-starter</artifactId>
 </dependency>
 <dependency>
@@ -9,15 +9,15 @@
     <artifactId>spring-boot-starter-web</artifactId>
 </dependency>
 <dependency>
-    <groupId>com.yangzb</groupId>
+    <groupId>com.fishingtime</groupId>
     <artifactId>spring-boot-starter-springfox-swagger-lastest</artifactId>
 </dependency>
 <dependency>
-    <groupId>com.yangzb</groupId>
+    <groupId>com.fishingtime</groupId>
     <artifactId>spring-boot-starter-mybatis-plus</artifactId>
 </dependency>
 <dependency>
-    <groupId>com.yangzb</groupId>
+    <groupId>com.fishingtime</groupId>
     <artifactId>common-web</artifactId>
 </dependency>
 <dependency>

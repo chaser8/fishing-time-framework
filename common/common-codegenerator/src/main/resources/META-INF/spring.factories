@@ -1,2 +1,2 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-com.yangzb.framework.common.codegenerator.autoconfigure.CodeGeneratorAutoConfiguration
+com.fishingtime.framework.common.codegenerator.autoconfigure.CodeGeneratorAutoConfiguration

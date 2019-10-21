@@ -52,12 +52,12 @@ logging:
 #          enabled: true
 #    nacos:
 #      discovery:
-#        server-addr: yangzb.cn:8848
+#        server-addr: :8848
 #        namespace: "5d076bf4-2ffb-46d7-b028-095fff73c891"
 #      config:
 #        namespace: "5d076bf4-2ffb-46d7-b028-095fff73c891"
 #        file-extension: yaml
-#        server-addr: yangzb.cn:8848
+#        server-addr: :8848
 #        ext-config:
 #        - data-id: database-${spring.profiles.active}.yaml
 #          group: database

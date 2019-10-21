@@ -6,9 +6,9 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
 /**
- * @program: bigdata-dev1
+ * @program:
  * @description:
- * @author: yzb
+ * @author:
  * @create: 2019-03-22 14:10
  **/
 @SpringBootApplication

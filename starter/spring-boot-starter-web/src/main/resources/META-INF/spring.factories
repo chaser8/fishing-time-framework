@@ -1,2 +1,2 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-com.yangzb.framework.springboot.web.autoconfigure.SpringBootAutoConfiguration
+com.fishingtime.framework.springboot.web.autoconfigure.SpringBootAutoConfiguration

@@ -1,2 +1,2 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-com.yangzb.framework.uaa.resource.server.autoconfigure.ResourceServerAutoConfiguration
+com.fishingtime.framework.uaa.resource.server.autoconfigure.ResourceServerAutoConfiguration

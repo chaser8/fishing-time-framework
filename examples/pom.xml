@@ -2,7 +2,7 @@
 
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <groupId>com.yangzb</groupId>
+    <groupId>com.fishingtime</groupId>
     <packaging>pom</packaging>
     <version>P-1.0.0-SNAPSHOT</version>
     <modelVersion>4.0.0</modelVersion>
@@ -16,16 +16,16 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>com.yangzb</groupId>
+                <groupId>com.fishingtime</groupId>
                 <artifactId>base-dependencies</artifactId>
-                <version>${parent.version}</version>
+                <version>${framework.version}</version>
                 <scope>import</scope>
                 <type>pom</type>
             </dependency>
             <dependency>
-                <groupId>com.yangzb</groupId>
+                <groupId>com.fishingtime</groupId>
                 <artifactId>spring-cloud-alibaba-dependencies</artifactId>
-                <version>${parent.version}</version>
+                <version>${framework.version}</version>
                 <scope>import</scope>
                 <type>pom</type>
             </dependency>
@@ -33,7 +33,7 @@
     </dependencyManagement>
     <dependencies>
         <dependency>
-            <groupId>com.yangzb</groupId>
+            <groupId>com.fishingtime</groupId>
             <artifactId>common-base</artifactId>
         </dependency>
     </dependencies>

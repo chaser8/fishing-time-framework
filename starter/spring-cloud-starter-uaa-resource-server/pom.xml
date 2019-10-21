@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>starter</artifactId>
-        <groupId>com.yangzb</groupId>
+        <groupId>com.fishingtime</groupId>
         <version>P-1.0.0-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
@@ -17,7 +17,7 @@
             <artifactId>spring-cloud-starter-oauth2</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.yangzb</groupId>
+            <groupId>com.fishingtime</groupId>
             <artifactId>spring-cloud-starter-alibaba</artifactId>
             <scope>test</scope>
         </dependency>
@@ -27,7 +27,7 @@
             <optional>true</optional>
         </dependency>
         <dependency>
-            <groupId>com.yangzb</groupId>
+            <groupId>com.fishingtime</groupId>
             <artifactId>common-uaa-base</artifactId>
         </dependency>
     </dependencies>

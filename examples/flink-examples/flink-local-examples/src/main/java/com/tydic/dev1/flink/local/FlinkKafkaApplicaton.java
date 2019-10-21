@@ -7,9 +7,9 @@ import org.apache.flink.streaming.connectors.kafka.FlinkKafkaConsumer010;
 import java.util.Properties;
 
 /**
- * @program: bigdata-dev1
+ * @program:
  * @description:
- * @author: yzb
+ * @author:
  * @create: 2019-04-11 10:51
  **/
 public class FlinkKafkaApplicaton {

@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>security-example</artifactId>
-        <groupId>com.yangzb</groupId>
+        <groupId>com.fishingtime</groupId>
         <version>P-1.0.0-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
@@ -12,16 +12,16 @@
     <artifactId>spring-cloud-starter-uaa-server-example</artifactId>
     <dependencies>
         <dependency>
-            <groupId>com.yangzb</groupId>
+            <groupId>com.fishingtime</groupId>
             <artifactId>spring-cloud-starter-uaa-server</artifactId>
-            <version>${parent.version}</version>
+            <version>${framework.version}</version>
         </dependency>
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.yangzb</groupId>
+            <groupId>com.fishingtime</groupId>
             <artifactId>spring-cloud-starter-alibaba</artifactId>
         </dependency>
     </dependencies>

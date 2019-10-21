@@ -8,9 +8,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
- * @program: bigdata-dev1
+ * @program:
  * @description:
- * @author: yzb
+ * @author:
  * @create: 2019-05-09 10:08
  **/
 @Slf4j

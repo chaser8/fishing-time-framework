@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>examples</artifactId>
-        <groupId>com.yangzb</groupId>
+        <groupId>com.fishingtime</groupId>
         <version>P-1.0.0-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
@@ -19,9 +19,9 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>com.yangzb</groupId>
+                <groupId>com.fishingtime</groupId>
                 <artifactId>base-dependencies</artifactId>
-                <version>${parent.version}</version>
+                <version>${framework.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -30,11 +30,11 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.yangzb</groupId>
+            <groupId>com.fishingtime</groupId>
             <artifactId>spring-cloud-nacos-config-starter</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.yangzb</groupId>
+            <groupId>com.fishingtime</groupId>
             <artifactId>spring-boot-web-starter</artifactId>
         </dependency>
         <dependency>

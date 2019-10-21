@@ -21,12 +21,12 @@ spring:
       config:
         namespace: 5d076bf4-2ffb-46d7-b028-095fff73c891
         file-extension: yaml
-        server-addr: yangzb.cn:8848
+        server-addr: :8848
     sentinel:
       datasource:
         ds1:
           nacos:
-            server-addr: yangzb.cn:8848
+            server-addr: :8848
 #            namespace: 5d076bf4-2ffb-46d7-b028-095fff73c891
             data-id: sentinel.json
             group-id: example

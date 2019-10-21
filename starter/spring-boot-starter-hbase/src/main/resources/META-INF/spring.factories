@@ -1,2 +1,2 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-com.yangzb.framework.hbase.autoconfigure.HBaseAutoConfiguration
+com.fishingtime.framework.hbase.autoconfigure.HBaseAutoConfiguration

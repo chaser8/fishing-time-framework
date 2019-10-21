@@ -10,9 +10,9 @@ import javax.servlet.ServletException;
 import java.io.File;
 
 /**
- * @program: bigdata-dev1
+ * @program:
  * @description:
- * @author: yzb
+ * @author:
  * @create: 2019-03-22 14:10
  **/
 @SpringBootApplication
@@ -23,7 +23,7 @@ public class ApiApplication implements ServletContextInitializer {
     }
     @Override
     public void onStartup(ServletContext servletContext) throws ServletException {
-        String relativePath="/Users/yzb/02.Subversion/framework/examples/base-api-example/src/main/resources/sso.properties";
+        String relativePath="/Users//02.Subversion/framework/examples/base-api-example/src/main/resources/sso.properties";
         servletContext.setInitParameter("configurationStrategy", "PROPERTY_FILE");
         File docBaseFile=new File(relativePath);
 //        if(!docBaseFile.exists()){
