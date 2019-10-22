@@ -4,6 +4,7 @@ import cn.hutool.core.util.ReflectUtil;
 import com.fasterxml.jackson.databind.exc.InvalidFormatException;
 import com.fishingtime.framework.common.web.exception.AuthenticationException;
 import com.fishingtime.framework.common.web.exception.BusiException;
+import com.fishingtime.framework.common.web.exception.SystemException;
 import com.fishingtime.framework.common.web.response.ResultStatus;
 import com.fishingtime.framework.common.web.response.Response;
 import lombok.extern.slf4j.Slf4j;
@@ -66,7 +67,6 @@ public class ControllerAdvice {
     @ResponseBody
     @ExceptionHandler(value = Exception.class)
     public org.springframework.http.ResponseEntity errorHandler(Exception ex)throws Exception {
-        //不处理ServletException异常，在BasicErrorController中处理
         if(ex instanceof ServletException){
             throw ex;
         }
@@ -96,7 +96,7 @@ public class ControllerAdvice {
     }
 
     /**
-     * errorHandler 前台传参json转换错误
+     * busiExceptionHandler 程序主动抛出的业务异常处理
      * @Description:
      * @param ex
      * @return com.fishingtime.dev1.common.base.api.Response
@@ -105,29 +105,16 @@ public class ControllerAdvice {
      * @throws
      */
     @ResponseBody
-    @ExceptionHandler(value = AuthenticationException.class)
-    public ResponseEntity errorHandler(AuthenticationException ex) {
-//        ResponseEntity.status(HttpStatus.ACCEPTED).body(ex);
-//        Response<ResponseBodyError> response = ex.getResponse();
-//        if(!StrUtil.isEmpty(ex.getMessage())){
-//            response.getBody().setMessage(ex.getMessage());
-//        }
-        return ex.getResponse();
-    }
-
-    /**
-     * busiExceptionHandler 程序主动抛出的业务异常处理
-     * @Description:  
-     * @param ex
-     * @return com.fishingtime.dev1.common.base.api.Response
-     * @author
-     * @date 2019/4/10 08:55
-     * @throws
-     */
-    @ResponseBody
-    @ExceptionHandler(value = BusiException.class)
-    public ResponseEntity busiExceptionHandler(BusiException ex) {
-        return ex.getResponse();
+    @ExceptionHandler(value = {AuthenticationException.class,BusiException.class, SystemException.class})
+    public ResponseEntity systemException(Exception ex) {
+        Object response = ReflectUtil.getFieldValue(ex, "response");
+        ResponseEntity responseEntity = null;
+        if(response!=null&&response instanceof ResponseEntity){
+            responseEntity = (ResponseEntity)response;
+        }else{
+            responseEntity = Response.fail(ResultStatus.SYSTEM_ERROR);
+        }
+        return responseEntity;
     }
 
     /**
