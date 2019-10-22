@@ -21,6 +21,8 @@ public class R<T> extends LinkedHashMap<String,Object> implements Serializable {
         });
         this.status = Optional.ofNullable(status).orElse(this.status);
         this.put(CODE,this.status.getCode());
+        this.put(SUCCESS,this.status.equals(ResultStatus.SUCCESS));
+
         this.message = Optional.ofNullable(message).orElse(this.status.getMessage());
         this.put(MESSAGE,this.message);
     }
@@ -28,11 +30,13 @@ public class R<T> extends LinkedHashMap<String,Object> implements Serializable {
         message = Optional.ofNullable(message).orElse(status.getMessage());
         return message;
     }
+
     public String getCode() {
         return status.getCode();
     }
 
     public static final String CODE = "code";
+    public static final String SUCCESS = "success";
     public static final String MESSAGE = "message";
 
     public T getData() {

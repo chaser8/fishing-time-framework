@@ -5,6 +5,7 @@ import com.fishingtime.framework.common.web.response.Response;
 import com.fishingtime.framework.common.web.response.ResultStatus;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.experimental.Accessors;
 import org.springframework.http.ResponseEntity;
 
 /**
@@ -16,8 +17,11 @@ import org.springframework.http.ResponseEntity;
  **/
 @Getter
 @Setter
+@Accessors(chain = true)
 public class BusiException extends RuntimeException{
     protected ResponseEntity response =null;
+    protected String systemErrorMessage = null;
+
     public BusiException(ResultStatus resultStatus) {
         super();
         response = Response.fail(resultStatus);
