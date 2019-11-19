@@ -5,6 +5,7 @@ import com.fishingtime.framework.common.base.util.JSONUtil;
 
 import java.io.Serializable;
 import java.util.LinkedHashMap;
+import java.util.Map;
 import java.util.Optional;
 
 /**
@@ -17,7 +18,11 @@ public class R<T> extends LinkedHashMap<String,Object> implements Serializable {
     R(ResultStatus status,String message,T data){
         this.data = data;
         Optional.ofNullable(data).ifPresent(o -> {
-            this.putAll(BeanUtil.beanToMap(this.data));
+            if(o instanceof Map){
+                this.putAll((Map<? extends String, ?>) o);
+            }else{
+                this.putAll(BeanUtil.beanToMap(o));
+            }
         });
         this.status = Optional.ofNullable(status).orElse(this.status);
         this.put(CODE,this.status.getCode());

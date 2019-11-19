@@ -25,10 +25,10 @@ public class ResultStatus {
     public static ResultStatus THIRD_INTF_ERROR = new ResultStatus("9001", "三方接口错误");
     public static ResultStatus INTF_ERROR = new ResultStatus("9002", "调用接口错误");
 
-    private String code;
-    private String message;
+    protected String code;
+    protected String message;
 
-    private ResultStatus(String code, String message) {
+    protected ResultStatus(String code, String message) {
         this.code = code;
         this.message = message;
     }
