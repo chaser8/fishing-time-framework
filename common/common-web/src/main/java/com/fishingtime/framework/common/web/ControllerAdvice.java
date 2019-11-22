@@ -86,6 +86,7 @@ public class ControllerAdvice {
     @ResponseBody
     @ExceptionHandler(value = HttpMessageNotReadableException.class)
     public org.springframework.http.ResponseEntity errorHandler(HttpMessageNotReadableException ex) {
+        log.error("",ex);
         String message = ex.getMessage();
         Throwable rootCause = ex.getRootCause();
         if(rootCause instanceof InvalidFormatException){
@@ -129,6 +130,7 @@ public class ControllerAdvice {
     @ResponseBody
     @ExceptionHandler(value = {MethodArgumentNotValidException.class,BindException.class})
     public org.springframework.http.ResponseEntity bindExceptionHandler(Exception ex) {
+        log.error("",ex);
         BindingResult bindingResult = ReflectUtil.invoke(ex,"getBindingResult");
         List<ObjectError> allErrors = bindingResult.getAllErrors();
         StringBuffer message = new StringBuffer();

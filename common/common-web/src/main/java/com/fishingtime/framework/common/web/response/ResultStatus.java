@@ -22,8 +22,8 @@ public class ResultStatus {
     public static ResultStatus AUTH_ERROR = new ResultStatus("8001", "认证错误");
 
     public static ResultStatus SYSTEM_ERROR = new ResultStatus("9000", "系统错误");
-    public static ResultStatus THIRD_INTF_ERROR = new ResultStatus("9001", "三方接口错误");
-    public static ResultStatus INTF_ERROR = new ResultStatus("9002", "调用接口错误");
+    public static ResultStatus THIRD_INTF_ERROR = new ResultStatus("9101", "三方接口错误");
+    public static ResultStatus INTF_ERROR = new ResultStatus("9102", "调用接口错误");
 
     protected String code;
     protected String message;
