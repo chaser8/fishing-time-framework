@@ -225,5 +225,5 @@ public class ServiceImpl<T> implements IService<T> {
         return mapper.selectByRowBounds(record, rowBounds);
     }
     @Autowired
-    private BaseMapper<T> mapper;
+    protected BaseMapper<T> mapper;
 }

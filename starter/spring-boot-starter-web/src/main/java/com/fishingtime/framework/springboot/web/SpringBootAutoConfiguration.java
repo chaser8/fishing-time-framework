@@ -1,5 +1,7 @@
-package com.fishingtime.framework.springboot.web.autoconfigure;
+package com.fishingtime.framework.springboot.web;
 
+import com.fishingtime.framework.springboot.web.autoconfigure.DefaultErrorAttributes;
+import com.fishingtime.framework.springboot.web.autoconfigure.WebMvcRegistrations;
 import com.fishingtime.framework.springboot.web.filter.RequestWrapperFilter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.AutoConfigureBefore;

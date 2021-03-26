@@ -6,7 +6,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.context.properties.NestedConfigurationProperty;
 
 /**
- * @program: fishing-time-framework
+ * @program: fishing-time-frameworkœ
  * @description:
  * @author:
  * @create: 2019-10-21 16:26

@@ -33,7 +33,7 @@ import java.util.List;
  * @author:
  * @create: 2019-03-08 16:57
  **/
-@org.springframework.web.bind.annotation.RestControllerAdvice
+@org.springframework.web.bind.annotation.ControllerAdvice
 @Slf4j
 @ConditionalOnClass(javax.servlet.Servlet.class)
 public class ControllerAdvice {
@@ -52,7 +52,6 @@ public class ControllerAdvice {
      */
     @ModelAttribute
     public void addAttributes(Model model) {
-
     }
 
     /**
@@ -67,11 +66,11 @@ public class ControllerAdvice {
     @ResponseBody
     @ExceptionHandler(value = Exception.class)
     public org.springframework.http.ResponseEntity errorHandler(Exception ex)throws Exception {
-        if(ex instanceof ServletException){
-            throw ex;
-        }
+//        if(ex instanceof ServletException){
+//            throw ex;
+//        }
         log.error("",ex);
-        return Response.fail(ResultStatus.SYSTEM_ERROR);
+        return Response.fail(ResultStatus.SYSTEM_ERROR,ex.getLocalizedMessage());
     }
 
     /**

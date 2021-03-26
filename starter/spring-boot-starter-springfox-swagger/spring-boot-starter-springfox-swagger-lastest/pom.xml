@@ -13,15 +13,15 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
     <dependencies>
-        <dependency>
-            <artifactId>swagger-models</artifactId>
-            <groupId>io.swagger</groupId>
-            <version>1.5.21</version>
-        </dependency>
-        <dependency>
-            <artifactId>swagger-annotations</artifactId>
-            <groupId>io.swagger</groupId>
-            <version>1.5.21</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <artifactId>swagger-models</artifactId>-->
+<!--            <groupId>io.swagger</groupId>-->
+<!--            <version>1.5.21</version>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <artifactId>swagger-annotations</artifactId>-->
+<!--            <groupId>io.swagger</groupId>-->
+<!--            <version>1.5.21</version>-->
+<!--        </dependency>-->
     </dependencies>
 </project>
