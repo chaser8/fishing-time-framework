@@ -121,12 +121,12 @@
     </build>
     <distributionManagement>
         <repository>
-            <id>rdc-releases</id>
-            <url>https://repo.rdc.aliyun.com/repository/104345-release-2uXlFb/</url>
+            <id>home-releases</id>
+            <url>http://yangzb.myds.me:18081/repository/releases/</url>
         </repository>
         <snapshotRepository>
-            <id>rdc-snapshots</id>
-            <url>https://repo.rdc.aliyun.com/repository/104345-snapshot-JR54du/</url>
+            <id>home-snapshots</id>
+            <url>http://yangzb.myds.me:18081/repository/snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
 </project>
